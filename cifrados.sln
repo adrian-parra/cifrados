@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30804.86
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "cifrados", "cifrados\cifrados.vbproj", "{90AA0F1E-8CAE-442B-A0FC-9E5DF1B369FE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{90AA0F1E-8CAE-442B-A0FC-9E5DF1B369FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{90AA0F1E-8CAE-442B-A0FC-9E5DF1B369FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{90AA0F1E-8CAE-442B-A0FC-9E5DF1B369FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{90AA0F1E-8CAE-442B-A0FC-9E5DF1B369FE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2FDAE436-B1C6-40EB-B846-1E2DDDBB3DFB}
+	EndGlobalSection
+EndGlobal

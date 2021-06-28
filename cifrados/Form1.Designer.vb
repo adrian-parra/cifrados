@@ -33,12 +33,12 @@ Partial Class Form1
         Me.txt_textodescifrado = New System.Windows.Forms.TextBox()
         Me.txt_k = New System.Windows.Forms.TextBox()
         Me.Label6 = New System.Windows.Forms.Label()
-        Me.ListView1 = New System.Windows.Forms.ListView()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Button4 = New System.Windows.Forms.Button()
         Me.Label7 = New System.Windows.Forms.Label()
+        Me.lv_metodo = New System.Windows.Forms.ListBox()
         Me.SuspendLayout()
         '
         'Label1
@@ -138,15 +138,6 @@ Partial Class Form1
         Me.Label6.TabIndex = 10
         Me.Label6.Text = "k:"
         '
-        'ListView1
-        '
-        Me.ListView1.HideSelection = False
-        Me.ListView1.Location = New System.Drawing.Point(143, 365)
-        Me.ListView1.Name = "ListView1"
-        Me.ListView1.Size = New System.Drawing.Size(555, 305)
-        Me.ListView1.TabIndex = 11
-        Me.ListView1.UseCompatibleStateImageBehavior = False
-        '
         'Button1
         '
         Me.Button1.Location = New System.Drawing.Point(754, 365)
@@ -193,17 +184,26 @@ Partial Class Form1
         Me.Label7.TabIndex = 16
         Me.Label7.Text = "Metodo:"
         '
+        'lv_metodo
+        '
+        Me.lv_metodo.FormattingEnabled = True
+        Me.lv_metodo.ItemHeight = 25
+        Me.lv_metodo.Location = New System.Drawing.Point(143, 360)
+        Me.lv_metodo.Name = "lv_metodo"
+        Me.lv_metodo.Size = New System.Drawing.Size(605, 329)
+        Me.lv_metodo.TabIndex = 17
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(10.0!, 25.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1033, 721)
+        Me.Controls.Add(Me.lv_metodo)
         Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.Button4)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
-        Me.Controls.Add(Me.ListView1)
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.txt_k)
         Me.Controls.Add(Me.txt_textodescifrado)
@@ -233,10 +233,10 @@ Partial Class Form1
     Friend WithEvents txt_textodescifrado As TextBox
     Friend WithEvents txt_k As TextBox
     Friend WithEvents Label6 As Label
-    Friend WithEvents ListView1 As ListView
     Friend WithEvents Button1 As Button
     Friend WithEvents Button2 As Button
     Friend WithEvents Button3 As Button
     Friend WithEvents Button4 As Button
     Friend WithEvents Label7 As Label
+    Friend WithEvents lv_metodo As ListBox
 End Class

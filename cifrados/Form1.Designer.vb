@@ -45,9 +45,10 @@ Partial Class Form1
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Label1.Location = New System.Drawing.Point(328, 20)
+        Me.Label1.Location = New System.Drawing.Point(230, 12)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(360, 32)
+        Me.Label1.Size = New System.Drawing.Size(238, 21)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Cifrados simetricos y asimetricos"
         '
@@ -55,9 +56,10 @@ Partial Class Form1
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Label2.Location = New System.Drawing.Point(33, 89)
+        Me.Label2.Location = New System.Drawing.Point(23, 53)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(213, 32)
+        Me.Label2.Size = New System.Drawing.Size(137, 21)
         Me.Label2.TabIndex = 1
         Me.Label2.Text = "Metodo de cifrado"
         '
@@ -65,111 +67,124 @@ Partial Class Form1
         '
         Me.cb_metodocifrado.FormattingEnabled = True
         Me.cb_metodocifrado.Items.AddRange(New Object() {"Encadenamiento de bloques (i num aleatorios)", "Encadenamiento de bloquez (1 num aleatorio)"})
-        Me.cb_metodocifrado.Location = New System.Drawing.Point(263, 92)
+        Me.cb_metodocifrado.Location = New System.Drawing.Point(184, 55)
+        Me.cb_metodocifrado.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.cb_metodocifrado.Name = "cb_metodocifrado"
-        Me.cb_metodocifrado.Size = New System.Drawing.Size(256, 33)
+        Me.cb_metodocifrado.Size = New System.Drawing.Size(180, 23)
         Me.cb_metodocifrado.TabIndex = 2
         '
         'Label3
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Label3.Location = New System.Drawing.Point(33, 147)
+        Me.Label3.Location = New System.Drawing.Point(23, 88)
+        Me.Label3.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(163, 32)
+        Me.Label3.Size = New System.Drawing.Size(104, 21)
         Me.Label3.TabIndex = 3
         Me.Label3.Text = "Texto en claro"
         '
         'txt_textoclaro
         '
-        Me.txt_textoclaro.Location = New System.Drawing.Point(263, 150)
+        Me.txt_textoclaro.Location = New System.Drawing.Point(184, 90)
+        Me.txt_textoclaro.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.txt_textoclaro.Name = "txt_textoclaro"
-        Me.txt_textoclaro.Size = New System.Drawing.Size(256, 31)
+        Me.txt_textoclaro.Size = New System.Drawing.Size(180, 23)
         Me.txt_textoclaro.TabIndex = 4
         '
         'Label4
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Label4.Location = New System.Drawing.Point(33, 201)
+        Me.Label4.Location = New System.Drawing.Point(23, 121)
+        Me.Label4.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(151, 32)
+        Me.Label4.Size = New System.Drawing.Size(97, 21)
         Me.Label4.TabIndex = 5
         Me.Label4.Text = "Texto cifrado"
         '
         'txt_textocifrado
         '
-        Me.txt_textocifrado.Location = New System.Drawing.Point(263, 204)
+        Me.txt_textocifrado.Location = New System.Drawing.Point(184, 122)
+        Me.txt_textocifrado.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.txt_textocifrado.Name = "txt_textocifrado"
-        Me.txt_textocifrado.Size = New System.Drawing.Size(256, 31)
+        Me.txt_textocifrado.Size = New System.Drawing.Size(180, 23)
         Me.txt_textocifrado.TabIndex = 6
         '
         'Label5
         '
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Label5.Location = New System.Drawing.Point(33, 251)
+        Me.Label5.Location = New System.Drawing.Point(23, 151)
+        Me.Label5.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(188, 32)
+        Me.Label5.Size = New System.Drawing.Size(121, 21)
         Me.Label5.TabIndex = 7
         Me.Label5.Text = "Texto descifrado"
         '
         'txt_textodescifrado
         '
-        Me.txt_textodescifrado.Location = New System.Drawing.Point(263, 254)
+        Me.txt_textodescifrado.Location = New System.Drawing.Point(184, 152)
+        Me.txt_textodescifrado.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.txt_textodescifrado.Name = "txt_textodescifrado"
-        Me.txt_textodescifrado.Size = New System.Drawing.Size(256, 31)
+        Me.txt_textodescifrado.Size = New System.Drawing.Size(180, 23)
         Me.txt_textodescifrado.TabIndex = 8
         '
         'txt_k
         '
-        Me.txt_k.Location = New System.Drawing.Point(709, 150)
+        Me.txt_k.Location = New System.Drawing.Point(496, 90)
+        Me.txt_k.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.txt_k.Name = "txt_k"
-        Me.txt_k.Size = New System.Drawing.Size(78, 31)
+        Me.txt_k.Size = New System.Drawing.Size(56, 23)
         Me.txt_k.TabIndex = 9
         '
         'Label6
         '
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Label6.Location = New System.Drawing.Point(657, 150)
+        Me.Label6.Location = New System.Drawing.Point(460, 90)
+        Me.Label6.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(31, 32)
+        Me.Label6.Size = New System.Drawing.Size(21, 21)
         Me.Label6.TabIndex = 10
         Me.Label6.Text = "k:"
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(754, 365)
+        Me.Button1.Location = New System.Drawing.Point(528, 219)
+        Me.Button1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(243, 34)
+        Me.Button1.Size = New System.Drawing.Size(170, 20)
         Me.Button1.TabIndex = 12
         Me.Button1.Text = "Ver tabla"
         Me.Button1.UseVisualStyleBackColor = True
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(754, 455)
+        Me.Button2.Location = New System.Drawing.Point(528, 273)
+        Me.Button2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(243, 34)
+        Me.Button2.Size = New System.Drawing.Size(170, 20)
         Me.Button2.TabIndex = 13
         Me.Button2.Text = "Cifrar"
         Me.Button2.UseVisualStyleBackColor = True
         '
         'Button3
         '
-        Me.Button3.Location = New System.Drawing.Point(754, 546)
+        Me.Button3.Location = New System.Drawing.Point(528, 328)
+        Me.Button3.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(243, 34)
+        Me.Button3.Size = New System.Drawing.Size(170, 20)
         Me.Button3.TabIndex = 14
         Me.Button3.Text = "Descifrar"
         Me.Button3.UseVisualStyleBackColor = True
         '
         'Button4
         '
-        Me.Button4.Location = New System.Drawing.Point(754, 636)
+        Me.Button4.Location = New System.Drawing.Point(528, 382)
+        Me.Button4.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(243, 34)
+        Me.Button4.Size = New System.Drawing.Size(170, 20)
         Me.Button4.TabIndex = 15
         Me.Button4.Text = "Limpiar"
         Me.Button4.UseVisualStyleBackColor = True
@@ -178,26 +193,28 @@ Partial Class Form1
         '
         Me.Label7.AutoSize = True
         Me.Label7.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Label7.Location = New System.Drawing.Point(33, 365)
+        Me.Label7.Location = New System.Drawing.Point(23, 219)
+        Me.Label7.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(104, 32)
+        Me.Label7.Size = New System.Drawing.Size(67, 21)
         Me.Label7.TabIndex = 16
         Me.Label7.Text = "Metodo:"
         '
         'lv_metodo
         '
         Me.lv_metodo.FormattingEnabled = True
-        Me.lv_metodo.ItemHeight = 25
-        Me.lv_metodo.Location = New System.Drawing.Point(143, 360)
+        Me.lv_metodo.ItemHeight = 15
+        Me.lv_metodo.Location = New System.Drawing.Point(100, 216)
+        Me.lv_metodo.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.lv_metodo.Name = "lv_metodo"
-        Me.lv_metodo.Size = New System.Drawing.Size(605, 329)
+        Me.lv_metodo.Size = New System.Drawing.Size(425, 199)
         Me.lv_metodo.TabIndex = 17
         '
         'Form1
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(10.0!, 25.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1033, 721)
+        Me.ClientSize = New System.Drawing.Size(723, 433)
         Me.Controls.Add(Me.lv_metodo)
         Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.Button4)
@@ -215,6 +232,7 @@ Partial Class Form1
         Me.Controls.Add(Me.cb_metodocifrado)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
+        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Name = "Form1"
         Me.Text = "cifrados"
         Me.ResumeLayout(False)

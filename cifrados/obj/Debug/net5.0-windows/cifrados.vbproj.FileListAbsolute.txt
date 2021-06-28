@@ -16,3 +16,21 @@ C:\Users\Adrian\source\repos\cifrados\cifrados\obj\Debug\net5.0-windows\cifrados
 C:\Users\Adrian\source\repos\cifrados\cifrados\obj\Debug\net5.0-windows\ref\cifrados.dll
 C:\Users\Adrian\source\repos\cifrados\cifrados\obj\Debug\net5.0-windows\cifrados.pdb
 C:\Users\Adrian\source\repos\cifrados\cifrados\obj\Debug\net5.0-windows\cifrados.genruntimeconfig.cache
+C:\Users\Julio Alvarez\Source\Repos\adrian-parra\cifrados\cifrados\bin\Debug\net5.0-windows\cifrados.exe
+C:\Users\Julio Alvarez\Source\Repos\adrian-parra\cifrados\cifrados\bin\Debug\net5.0-windows\cifrados.deps.json
+C:\Users\Julio Alvarez\Source\Repos\adrian-parra\cifrados\cifrados\bin\Debug\net5.0-windows\cifrados.runtimeconfig.json
+C:\Users\Julio Alvarez\Source\Repos\adrian-parra\cifrados\cifrados\bin\Debug\net5.0-windows\cifrados.runtimeconfig.dev.json
+C:\Users\Julio Alvarez\Source\Repos\adrian-parra\cifrados\cifrados\bin\Debug\net5.0-windows\cifrados.dll
+C:\Users\Julio Alvarez\Source\Repos\adrian-parra\cifrados\cifrados\bin\Debug\net5.0-windows\ref\cifrados.dll
+C:\Users\Julio Alvarez\Source\Repos\adrian-parra\cifrados\cifrados\bin\Debug\net5.0-windows\cifrados.pdb
+C:\Users\Julio Alvarez\Source\Repos\adrian-parra\cifrados\cifrados\obj\Debug\net5.0-windows\cifrados.vbproj.AssemblyReference.cache
+C:\Users\Julio Alvarez\Source\Repos\adrian-parra\cifrados\cifrados\obj\Debug\net5.0-windows\cifrados.Form1.resources
+C:\Users\Julio Alvarez\Source\Repos\adrian-parra\cifrados\cifrados\obj\Debug\net5.0-windows\cifrados.vbproj.GenerateResource.cache
+C:\Users\Julio Alvarez\Source\Repos\adrian-parra\cifrados\cifrados\obj\Debug\net5.0-windows\cifrados.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Julio Alvarez\Source\Repos\adrian-parra\cifrados\cifrados\obj\Debug\net5.0-windows\cifrados.AssemblyInfoInputs.cache
+C:\Users\Julio Alvarez\Source\Repos\adrian-parra\cifrados\cifrados\obj\Debug\net5.0-windows\cifrados.AssemblyInfo.vb
+C:\Users\Julio Alvarez\Source\Repos\adrian-parra\cifrados\cifrados\obj\Debug\net5.0-windows\cifrados.vbproj.CoreCompileInputs.cache
+C:\Users\Julio Alvarez\Source\Repos\adrian-parra\cifrados\cifrados\obj\Debug\net5.0-windows\cifrados.dll
+C:\Users\Julio Alvarez\Source\Repos\adrian-parra\cifrados\cifrados\obj\Debug\net5.0-windows\ref\cifrados.dll
+C:\Users\Julio Alvarez\Source\Repos\adrian-parra\cifrados\cifrados\obj\Debug\net5.0-windows\cifrados.pdb
+C:\Users\Julio Alvarez\Source\Repos\adrian-parra\cifrados\cifrados\obj\Debug\net5.0-windows\cifrados.genruntimeconfig.cache

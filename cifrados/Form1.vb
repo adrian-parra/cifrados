@@ -96,6 +96,20 @@
         Return addValCeros + val
     End Function
 
+    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+        'btn descifrar alv
+
+    End Sub
+
+    Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
+        'el boton limpar ahora funciona
+        txt_k.Clear()
+        txt_textocifrado.Clear()
+        txt_textoclaro.Clear()
+        txt_textodescifrado.Clear()
+        lv_metodo.Items.Clear()
+    End Sub
+
     'BUTTON PARA CIFRAR
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
 
@@ -278,11 +292,45 @@
             End If
             'su parte 
         ElseIf cb_metodocifrado.Text = "Encadenamiento de bloquez (1 num aleatorio)" Then
-
+            CifrarUnoRandom() 'func1rand
 
         End If
     End Sub
+    'FUNCION 1 NUMERO ALEATORIO JULION
+    Function CifrarUnoRandom()
+        Dim Vinit, mdes, zcif, tclaro, c, k, n, cont, numascii As Integer
+        Dim s, caracter, textoclaro, binario, nuevobin As String
+        Dim vector4() As Integer
+        cont = 1
+        'pasar a bin
+        n = Val(txt_k.Text)
+        s = String.Empty
+        While n > 0
+            If n Mod Val(2) = 1 Then
+                s = s.Insert(0, "1")
+            Else
+                s = s.Insert(0, "0")
+            End If
+            n = Int(n / 2)
+        End While
+        binario = s
+        'Label7.Text = s 's=binario
+        'endbin inicia conv
+        tclaro = Len(txt_textoclaro.Text)
 
+        While (cont < tclaro)
+            caracter = Mid(txt_textoclaro.Text, cont, 1)
+            lv_metodo.Items.Add("ascii: " + Str(Asc(caracter)))
+            m = ConvBin(Str(Asc(caracter)))
+            MsgBox(m)
+            m = addCero(m, "9")
+            lv_metodo.Items.Add("binario: " + m)
+            'falta contruir cadena bloques 'descifrar textos para mañana a las 11:am a mas tardar
+            cont += 1
+        End While
+
+
+    End Function
     'FUNCION PARA GENERAR NUMEROS RANDOM
     Private Function NumR(k As String) As Integer
         Dim v As Integer = (2 ^ CInt(k))

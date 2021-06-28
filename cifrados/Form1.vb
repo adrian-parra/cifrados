@@ -2,6 +2,7 @@
     Dim Tsalida, Tentrada, Vtabla, Valeatorio, valcifrado As New ArrayList
 
     Dim m As String = ""
+    Dim valcifr As String = ""
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
@@ -108,7 +109,7 @@
                 'generar num random
                 For i = 0 To CInt(txt_k.Text) - 1
                     Valeatorio.Add(addCero(ConvBin(Str(NumR(txt_k.Text))), txt_k.Text))
-                    'MsgBox(Valeatorio(i))
+                    '     MsgBox(Valeatorio(i))
 
                 Next
 
@@ -119,15 +120,18 @@
                     contPareja += 1
                     val += Mid(m, i, 1)
 
-                    MsgBox("val  " + val)
-                    MsgBox("cont " + Str(contPareja))
+                    'MsgBox("val  " + val)
+                    'MsgBox("cont " + Str(contPareja))
                     If contPareja = 3 Then
 
                         'buscar valor en la tabla
                         For j = 0 To Tentrada.Count - 1
-                            If val = Tentrada(j) Then
-                                Vtabla.Add(Tsalida(j))
-                                MsgBox(Tsalida(j))
+                            ' MsgBox("entro val " + val)
+                            ' MsgBox(Tentrada(j))
+
+                            If val = addCero(ConvBin(Tentrada(j)), txt_k.Text) Then
+                                Vtabla.Add(addCero(ConvBin(Tsalida(j)), txt_k.Text))
+                                'MsgBox(addCero(ConvBin(Tsalida(j)), txt_k.Text))
                                 Exit For
                             End If
                         Next
@@ -136,6 +140,140 @@
                         val = ""
                     End If
                 Next
+
+                'cifrado
+                Dim valC As String = ""
+                For j = 0 To CInt(txt_k.Text) - 1
+                    For i = 1 To CInt(txt_k.Text)
+                        If Mid(Vtabla(j), i, 1) <> Mid(Valeatorio(j), i, 1) Then
+                            valC += "1"
+                        Else
+                            valC += "0"
+                        End If
+
+                    Next
+                    'valcifrado.Add(valC)
+                    'MsgBox(valC)
+                    valC = ""
+
+                Next
+
+            Else
+                'cuando es mas de un caracter
+                Dim caracter As String = ""
+                For k = 1 To txt_textoclaro.Text.Length
+                    caracter = Mid(txt_textoclaro.Text, k, 1)
+
+                    m = ConvBin(Str(Asc(caracter)))
+                    m = addCero(m, "9")
+
+                    If k = 1 Then
+                        'tutorial
+                        lv_metodo.Items.Add("paso 1:")
+                        lv_metodo.Items.Add("convertir el caracter " + caracter + " ascii")
+                        lv_metodo.Items.Add("del valor ascii " + Str(Asc(caracter)))
+                        lv_metodo.Items.Add("a binario " + m)
+                    End If
+
+
+
+                    'generar num random
+                    For i = 0 To CInt(txt_k.Text) - 1
+                        Valeatorio.Add(addCero(ConvBin(Str(NumR(txt_k.Text))), txt_k.Text))
+                        ' MsgBox(Valeatorio(i))
+                        If k = 1 And i = 0 Then
+                            lv_metodo.Items.Add("paso 2")
+                            lv_metodo.Items.Add("sacar 3 numeros randoms")
+
+
+
+                        End If
+
+                    Next
+                    If k = 1 Then
+                        lv_metodo.Items.Add(Valeatorio(0) + " " + Valeatorio(1) + " " + Valeatorio(2))
+                    End If
+
+                    'agrupar mensaje en tres
+                    If k = 1 Then
+                        lv_metodo.Items.Add("paso 3")
+                        lv_metodo.Items.Add("agrupar mensaje en 3 bits")
+                        lv_metodo.Items.Add(m)
+
+                    End If
+
+
+                    Dim contPareja As Integer = 0
+                    Dim val As String = ""
+                    For i = 1 To m.Length
+                        contPareja += 1
+                        val += Mid(m, i, 1)
+
+                        'MsgBox("val  " + val)
+                        'MsgBox("cont " + Str(contPareja))
+                        If contPareja = 3 Then
+
+                            'buscar valor en la tabla
+                            For j = 0 To Tentrada.Count - 1
+                                ' MsgBox("entro val " + val)
+                                ' MsgBox(Tentrada(j))
+
+                                If val = addCero(ConvBin(Tentrada(j)), txt_k.Text) Then
+                                    Vtabla.Add(addCero(ConvBin(Tsalida(j)), txt_k.Text))
+                                    If k = 1 And j = 0 Then
+                                        lv_metodo.Items.Add("grupo  " + Str(j + 1) + " " + val)
+                                        lv_metodo.Items.Add("tabla " + addCero(ConvBin(Tsalida(j)), txt_k.Text))
+
+
+                                    End If
+                                    ' MsgBox(addCero(ConvBin(Tsalida(j)), txt_k.Text))
+                                    Exit For
+                                End If
+                            Next
+
+                            contPareja = 0
+                            val = ""
+                        End If
+                    Next
+
+                    'cifrado
+                    Dim valC As String = ""
+                    For j = 0 To CInt(txt_k.Text) - 1
+                        For i = 1 To CInt(txt_k.Text)
+                            If Mid(Vtabla(j), i, 1) <> Mid(Valeatorio(j), i, 1) Then
+                                valC += "1"
+                            Else
+                                valC += "0"
+                            End If
+
+                        Next
+                        valcifrado.Add(valC)
+                        'MsgBox(valC)
+                        valC = ""
+                        If k = 1 And j = 0 Then
+                            lv_metodo.Items.Add("paso 4")
+                            lv_metodo.Items.Add("aplicar xor entre valor de tabla y valor aleatorio")
+                            lv_metodo.Items.Add(Vtabla(0) + " xor " + Valeatorio(0))
+
+                            lv_metodo.Items.Add("cifrado")
+
+
+
+
+
+
+                        End If
+                    Next
+                Next
+                valcifr = ""
+                Dim valn As String = ""
+                For i = 0 To valcifrado.Count - 1
+                    valcifr += valcifrado(i)
+                    valn += Valeatorio(i)
+                    ' MsgBox("cifrado " + valcifr)
+                Next
+                lv_metodo.Items.Add(valcifr)
+
 
             End If
             'su parte 
